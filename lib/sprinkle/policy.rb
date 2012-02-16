@@ -89,7 +89,7 @@ module Sprinkle
         end
 
         normalize(all) do |package|
-          package.role = @roles
+          Sprinkle::OPTIONS[:role] = @roles
           package.process(deployment, @roles)
         end
       end
