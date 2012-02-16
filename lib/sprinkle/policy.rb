@@ -89,6 +89,7 @@ module Sprinkle
         end
 
         normalize(all) do |package|
+          package.role = @roles
           package.process(deployment, @roles)
         end
       end
