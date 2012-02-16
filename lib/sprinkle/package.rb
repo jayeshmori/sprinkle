@@ -107,7 +107,7 @@ module Sprinkle
 
     class Package #:nodoc:
       include ArbitraryOptions
-      attr_accessor :name, :provides, :installers, :dependencies, :recommends, :verifications
+      attr_accessor :name, :provides, :installers, :dependencies, :recommends, :verifications, :role
 
       def initialize(name, metadata = {}, &block)
         raise 'No package name supplied' unless name
